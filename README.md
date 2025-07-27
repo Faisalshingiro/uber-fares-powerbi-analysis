@@ -110,6 +110,8 @@ Avg Fare per Ride = AVERAGE(Enhanced_Uber_Fares[fare_amount])
 🖥️ See `Report_Presentation.pptx` for a complete summary of findings, visuals, and business implications.
 
 ---
+## PowerBI_Dashboard.pbix
+https://drive.google.com/file/d/1JQ_RizyAQLjDe663UKgOylcBmMMBkTPO/view?usp=sharing
 
 ## 🔗 Author
 
