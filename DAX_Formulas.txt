@@ -1,0 +1,43 @@
+
+DAX Formulas Used in Uber Fares Dashboard
+=========================================
+
+1. Total Fares
+--------------
+Total Fares = SUM(Enhanced_Uber_Fares[fare_amount])
+
+2. Total Rides
+--------------
+Total Rides = COUNTROWS(Enhanced_Uber_Fares)
+
+3. Total Duration (if duration column exists)
+--------------------------------------------
+Total Duration = SUM(Enhanced_Uber_Fares[duration])
+
+4. Average Fare per Ride
+------------------------
+Average Fare = AVERAGE(Enhanced_Uber_Fares[fare_amount])
+
+5. Ride Count by Day of Week
+----------------------------
+Ride Count by Day = 
+CALCULATE(
+    COUNTROWS(Enhanced_Uber_Fares),
+    VALUES(Enhanced_Uber_Fares[day_of_week])
+)
+
+6. Ride Count by Hour
+---------------------
+Ride Count by Hour = 
+CALCULATE(
+    COUNTROWS(Enhanced_Uber_Fares),
+    VALUES(Enhanced_Uber_Fares[hour])
+)
+
+7. Monthly Fare Trend
+---------------------
+Monthly Fare = 
+CALCULATE(
+    SUM(Enhanced_Uber_Fares[fare_amount]),
+    VALUES(Enhanced_Uber_Fares[month])
+)
