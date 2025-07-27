@@ -90,9 +90,8 @@ Avg Fare per Ride = AVERAGE(Enhanced_Uber_Fares[fare_amount])
 
 - Peak ride hours: 7–9 AM & 5–8 PM (commute times)
 - Highest demand on Fridays and Saturdays
-- Fare distribution skews toward $5–$15
 - Downtown areas show ride hotspots
-- Minimal correlation with weather (if included)
+
 
 ---
 
